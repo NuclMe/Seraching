@@ -1,0 +1,105 @@
+:::: Log File ::::
+
+
+[13/5/2021 -- 10:59]  Info task started
+[13/5/2021 -- 11:5]  Scripts ran on main.js
+[13/5/2021 -- 11:6]  Scripts ran on main.js
+[13/5/2021 -- 14:58]  Info task started
+[13/5/2021 -- 15:48]  Scripts ran on main.js
+[13/5/2021 -- 15:49]  Scripts ran on main.js
+[13/5/2021 -- 15:49]  Scripts ran on main.js
+[13/5/2021 -- 15:49]  Scripts ran on main.js
+[13/5/2021 -- 15:50]  Scripts ran on main.js
+[13/5/2021 -- 15:50]  Scripts ran on main.js
+[13/5/2021 -- 15:50]  Scripts ran on main.js
+[13/5/2021 -- 15:50]  Scripts ran on main.js
+[13/5/2021 -- 15:51]  Scripts ran on main.js
+[13/5/2021 -- 15:51]  Scripts ran on main.js
+[13/5/2021 -- 15:51]  Scripts ran on main.js
+[13/5/2021 -- 15:51]  Scripts ran on main.js
+[13/5/2021 -- 15:53]  Scripts ran on main.js
+[13/5/2021 -- 15:57]  Scripts ran on main.js
+[13/5/2021 -- 16:2]  Scripts ran on main.js
+[13/5/2021 -- 16:2]  Scripts ran on main.js
+[13/5/2021 -- 16:4]  Scripts ran on main.js
+[13/5/2021 -- 16:4]  Scripts ran on main.js
+[13/5/2021 -- 16:4]  Scripts ran on main.js
+[13/5/2021 -- 16:5]  Scripts ran on main.js
+[13/5/2021 -- 16:5]  Scripts ran on main.js
+[13/5/2021 -- 16:13]  Scripts ran on main.js
+[13/5/2021 -- 16:13]  Scripts ran on main.js
+[13/5/2021 -- 16:13]  Scripts ran on main.js
+[13/5/2021 -- 16:14]  Scripts ran on main.js
+[13/5/2021 -- 16:14]  Scripts ran on main.js
+[13/5/2021 -- 16:14]  Scripts ran on main.js
+[13/5/2021 -- 16:14]  Scripts ran on main.js
+[13/5/2021 -- 16:14]  Scripts ran on main.js
+[13/5/2021 -- 16:14]  Scripts ran on main.js
+[13/5/2021 -- 16:14]  Scripts ran on main.js
+[13/5/2021 -- 16:22]  Scripts ran on main.js
+[13/5/2021 -- 16:22]  Scripts ran on main.js
+[13/5/2021 -- 16:24]  Scripts ran on main.js
+[13/5/2021 -- 16:24]  Scripts ran on main.js
+[13/5/2021 -- 16:24]  Scripts ran on main.js
+[13/5/2021 -- 16:24]  Scripts ran on main.js
+[13/5/2021 -- 16:24]  Scripts ran on main.js
+[13/5/2021 -- 16:25]  Scripts ran on main.js
+[13/5/2021 -- 16:25]  Scripts ran on main.js
+[13/5/2021 -- 16:25]  Scripts ran on main.js
+[13/5/2021 -- 16:34]  Scripts ran on main.js
+[13/5/2021 -- 16:38]  Scripts ran on main.js
+[13/5/2021 -- 16:41]  Scripts ran on main.js
+[13/5/2021 -- 16:46]  Info task started
+[13/5/2021 -- 16:49]  Scripts ran on main.js
+[13/5/2021 -- 16:50]  Scripts ran on main.js
+[13/5/2021 -- 21:57]  Info task started
+[13/5/2021 -- 21:57]  restarted!
+[13/5/2021 -- 21:58]  restarted!
+[13/5/2021 -- 21:58]  restarted!
+[13/5/2021 -- 21:58]  restarted!
+[13/5/2021 -- 22:0]  restarted!
+[13/5/2021 -- 22:0]  restarted!
+[13/5/2021 -- 22:0]  restarted!
+[15/5/2021 -- 21:53]  Info task started
+[15/5/2021 -- 22:24]  restarted!
+[15/5/2021 -- 22:24]  restarted!
+[15/5/2021 -- 22:24]  restarted!
+[15/5/2021 -- 22:25]  restarted!
+[15/5/2021 -- 22:42]  restarted!
+[15/5/2021 -- 22:42]  restarted!
+[15/5/2021 -- 22:43]  restarted!
+[15/5/2021 -- 22:44]  restarted!
+[16/5/2021 -- 0:6]  restarted!
+[16/5/2021 -- 0:37]  restarted!
+[16/5/2021 -- 0:37]  restarted!
+[16/5/2021 -- 0:37]  restarted!
+[16/5/2021 -- 0:38]  restarted!
+[16/5/2021 -- 0:39]  restarted!
+[16/5/2021 -- 0:39]  restarted!
+[16/5/2021 -- 0:39]  restarted!
+[16/5/2021 -- 0:39]  restarted!
+[16/5/2021 -- 0:39]  restarted!
+[16/5/2021 -- 0:40]  restarted!
+[16/5/2021 -- 0:40]  restarted!
+[16/5/2021 -- 0:41]  restarted!
+[16/5/2021 -- 0:41]  restarted!
+[16/5/2021 -- 0:41]  restarted!
+[16/5/2021 -- 0:42]  restarted!
+[16/5/2021 -- 0:42]  restarted!
+[16/5/2021 -- 0:42]  restarted!
+[16/5/2021 -- 0:45]  restarted!
+[16/5/2021 -- 0:45]  restarted!
+[16/5/2021 -- 0:45]  restarted!
+[16/5/2021 -- 0:45]  restarted!
+[16/5/2021 -- 0:46]  restarted!
+[16/5/2021 -- 0:46]  restarted!
+[16/5/2021 -- 13:30]  Info task started
+[16/5/2021 -- 13:35]  restarted!
+[16/5/2021 -- 13:35]  restarted!
+[16/5/2021 -- 13:35]  restarted!
+[16/5/2021 -- 13:35]  restarted!
+[16/5/2021 -- 13:59]  restarted!
+[16/5/2021 -- 14:33]  Info task started
+[16/5/2021 -- 14:59]  Scripts ran on main.js
+[16/5/2021 -- 15:1]  restarted!
+[16/5/2021 -- 15:1]  restarted!
