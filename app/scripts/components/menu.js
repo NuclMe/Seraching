@@ -3,6 +3,7 @@
  * 
  */
 import React from 'react';
+import axios from 'axios'
 
 class Menu extends React.Component {
 
@@ -20,21 +21,18 @@ class Menu extends React.Component {
     }
 
     componentDidMount(){
-        this.setState({showingAutocomplete:true})
-        fetch('http://localhost:3035/data')
-        
-        .then(res => res.json())
-        .then(
-            (result) =>{
-                this.setState({
-                    items:result,
-                    isLoading:false,
-                });
-                console.log(result)
-            }
-        )
-          .catch(error => this.setState({ error, isLoading: false }));
+        this.setState({showingAutocomplete:true})        
+          axios('http://localhost:3035/')
+                .then(response => {
+                console.log(response.data)
+                // setAllData(response.data);
+                // setFilteredData(response.data);
+                })
+                .catch(error => {
+                console.log('Error getting fake data: ' + error);
+                })
     }
+    
     /**
      * Shows or hides the search container
      * @memberof Menu
@@ -92,6 +90,17 @@ class Menu extends React.Component {
                     <a href="#" onClick={(e) => this.showSearchContainer(e)}>
                         <i className="material-icons close">close</i>
                     </a>
+                </div>
+                <div className='search-results'>
+                {/* {filteredData.map((value,index)=>{
+                      <div key={value.id}>
+                      <div >
+                      {value.title}
+                      </div>
+                      </div>
+                }
+              
+                )} */}
                 </div>
             </header>
         );

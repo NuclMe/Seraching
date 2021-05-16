@@ -25,6 +25,9 @@ const http      = require('http');
 const hostname  = 'localhost';
 const port      = 3035;
 const fs = require('fs');
+const config = JSON.stringify(fs.readFileSync('server/data.js', 'utf8'));
+const config2 = JSON.parse(config)
+
 
 
 
@@ -39,19 +42,16 @@ const fs = require('fs');
  */
 http.createServer(function (req, res) {
     // .. Here you can create your data response in a JSON format
-    
-    // res.setHeader('JSON', 'data/js');
 
-  
-    res.write("Response goes in here...", data); // Write out the default response
+   
+    res.setHeader( 'Content-Type', 'application/json');
+    res.setHeader('Access-Control-Allow-Origin', '*');
+    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
+    // res.write("Response goes in here..."); // Write out the default response
+    res.write(config2);     
     res.end(); //end the response
 }).listen( port );  
-const man ={
-    all:'ololo'
-}
-fs.writeFile('one.json', JSON.stringify(man), (err)=>{
-    if(err) console.log('err')
-});
+
 
 console.log(`[Server running on ${hostname}:${port}]`);
-console.log(data);
+
