@@ -94,3 +94,24 @@ header.menu {
     }
 
 }
+
+
+.search-results{
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px -15px 0;
+}
+.card{
+    width: 25%;
+    margin: 0 15px 15px 0;
+    .title{
+    margin: 10px 0 0  0;
+    font-size: 18px;
+    }
+    .about{
+        margin: 10px 0 0  0;
+        font-size: 12px;
+    }
+}

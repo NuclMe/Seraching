@@ -16,21 +16,54 @@ class Menu extends React.Component {
         this.state = {
             showingSearch: false,
             showingAutocomplete:false,
-            items: []
+            query: "",
+            items: [],
+            filtredData: []
         };
     }
 
+    handleInputChange = event => {
+        const query = event.target.value;
+    
+        this.setState(prevState => {
+          const filteredData = prevState.data.filter(element => {
+            return element.name.toLowerCase().includes(query.toLowerCase());
+          });
+    
+          return {
+            query,
+            filteredData
+          };
+        });
+      };
+
+    getData = () =>{
+        axios('http://localhost:3035/')
+        // JSON came in a string format. I dont know why??? Also, in 'search-results' class i did mapping from data,which i comment, while i got error here/ Markup for search-results' class i alo done 
+            .then(response => {
+            const { query } = this.state;  
+            
+            const serverdata = response.data;  
+                 
+
+            console.log(response.data)      
+            const filteredData = serverdata.filter(element => {
+                return element.name.toLowerCase().includes(query.toLowerCase());            
+            });
+            this.setState({
+                showingAutocomplete:true,
+                data,
+                filteredData
+                })      
+            })
+            .catch(error => {
+            console.log('Error getting fake data: ' + error);
+            })       
+    }
+
     componentDidMount(){
-        this.setState({showingAutocomplete:true})        
-          axios('http://localhost:3035/')
-                .then(response => {
-                console.log(response.data)
-                // setAllData(response.data);
-                // setFilteredData(response.data);
-                })
-                .catch(error => {
-                console.log('Error getting fake data: ' + error);
-                })
+        this.getData();
+          
     }
     
     /**
@@ -50,13 +83,7 @@ class Menu extends React.Component {
      * @memberof Menu
      * @param e [Object] - the event from a text change handler
      */
-    onSearch(e) {
-        
-        // Start Here
-        // ...
-        
-
-    }
+   
 
     /**
      * Renders the default app in the window, we have assigned this to an element called root.
@@ -86,21 +113,20 @@ class Menu extends React.Component {
                     </div>
                 </div>
                 <div className={(this.state.showingSearch ? "showing " : "") + "search-container"}>
-                    <input type="text" onChange={(e) => this.onSearch(e)} />
+                    <input type="text"  ref={input => this.search = input} onChange={this.handleInputChange} />
                     <a href="#" onClick={(e) => this.showSearchContainer(e)}>
                         <i className="material-icons close">close</i>
                     </a>
                 </div>
-                <div className='search-results'>
-                {/* {filteredData.map((value,index)=>{
-                      <div key={value.id}>
-                      <div >
-                      {value.title}
-                      </div>
-                      </div>
-                }
-              
-                )} */}
+                <div className='search-results'>          
+                    {/* {this.state.filteredData.map(i => 
+                    <div className='card'>
+                        <div className='title'>{i.name}</div>
+                        <div className='about'>{i.about}</div>
+                        <div className='thumb-img'>{i.img}</div>
+                        <div className='price'>{i.price}</div>
+                    </div>
+                    )} */}
                 </div>
             </header>
         );
